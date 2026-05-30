@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EdgeFlow</string>
+
+    <!-- About Screen -->
+    <string name="about">关于</string>
+    <string name="developed_by">由 btm_m 开发</string>
+    <string name="app_description">一个基于 Jetpack Compose + Kotlin + Material Design 3，利用 Shizuku 提权 / Root 权限实现类全界面负一屏的应用。本项目基于 GNU GPL v3.0 协议开源。</string>
+    <string name="github_page">本项目的 GitHub 页面</string>
+    <string name="official_site">应用官网</string>
+    <string name="btm_m_site">btm_m 官方网站</string>
+    <string name="btm_m_blog">btm_m 的博客</string>
+    <string name="app_info">应用与系统信息</string>
+    <string name="links">开发者链接</string>
+</resources>

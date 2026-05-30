@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EdgeFlow</string>
+
+    <!-- About Screen -->
+    <string name="about">About</string>
+    <string name="developed_by">Developed by btm_m</string>
+    <string name="app_description">A full-screen negative screen alternative built with Jetpack Compose + Kotlin + Material Design 3, utilizing Shizuku/Root for elevated privileges. Open-sourced under the GNU GPL v3.0 License.</string>
+    <string name="github_page">GitHub Repository</string>
+    <string name="official_site">Official Website</string>
+    <string name="btm_m_site">btm_m\'s Official Site</string>
+    <string name="btm_m_blog">btm_m\'s Blog</string>
+    <string name="app_info">App &amp; System Info</string>
+    <string name="links">Developer Links</string>
+</resources>

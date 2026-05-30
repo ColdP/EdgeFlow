@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" tools:ignore="HardwareIds" />
+
+    <permission android:name="${applicationId}.permission.SHIZUKU" android:protectionLevel="normal" />
+    <uses-permission android:name="${applicationId}.permission.SHIZUKU" />
+
+    <application
+        android:name=".EdgeFlowApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:localeConfig="@xml/locales_config"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.EdgeFlow">
+
+        <activity android:name=".MainActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/Theme.EdgeFlow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AppPickerActivity" android:exported="false" android:label="Add App" android:theme="@style/Theme.EdgeFlow" />
+        <activity android:name=".TriggerSettingsActivity" android:exported="false" android:label="Trigger &amp; Interaction" android:theme="@style/Theme.EdgeFlow" />
+        <activity android:name=".TriggerAreaActivity" android:exported="false" android:label="Advanced Area Setup" android:theme="@style/Theme.EdgeFlow" />
+        <activity android:name=".CustomLinksActivity" android:exported="false" android:label="Custom Quick Links" android:theme="@style/Theme.EdgeFlow" />
+        <activity android:name=".EditAppActivity" android:exported="false" android:label="Edit Sidebar Apps" android:theme="@style/Theme.EdgeFlow" />
+        <activity android:name=".AboutActivity" android:exported="false" android:label="About" android:theme="@style/Theme.EdgeFlow" />
+
+        <service android:name=".service.EdgeTriggerService" android:enabled="true" android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="global_overlay_gesture_listener" />
+        </service>
+
+        <receiver android:name=".receiver.AppUpgradeReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.MediaListenerService" android:label="EdgeFlow Media Service" android:exported="true" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <provider android:name="rikka.shizuku.ShizukuProvider" android:authorities="${applicationId}.shizuku" android:multiprocess="false" android:enabled="true" android:exported="true" android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    </application>
+</manifest>
