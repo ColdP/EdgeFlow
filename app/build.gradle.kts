@@ -20,6 +20,20 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    // 🚀 核心注入：开启 ABI 架构分包构建
+    splits {
+        abi {
+            isEnable = true // 开启分包编译
+            reset()         // 清除默认配置，完全接管
+
+            // 声明构建矩阵：涵盖了从现代旗舰到古董机、车机及电脑模拟器的所有架构
+            include("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
+
+            // 极客的温柔：同时生成一个包含所有 .so 库的“全家桶 (Universal)”包，方便小白盲下
+            isUniversalApk = true
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
