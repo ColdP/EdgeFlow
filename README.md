@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/btm-m/EdgeFlow/releases">
+  <a href="https://github.com/ColdP/EdgeFlow/releases">
     <img src="https://img.shields.io/github/v/release/btm-m/EdgeFlow?color=green" alt="Latest Release" />
   </a>
   <img src="https://img.shields.io/badge/license-GPL%20v3.0-blue" alt="License: GPL v3.0" />
@@ -73,7 +73,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/btm-m/EdgeFlow.git
+git clone https://github.com/ColdP/EdgeFlow.git
 cd EdgeFlow
 
 # Build debug APK
@@ -135,10 +135,10 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a PR.
 
 ## Links
 
-- **GitHub:** [github.com/btm-m/EdgeFlow](https://github.com/btm-m/EdgeFlow)
+- **GitHub:** [github.com/btm-m/EdgeFlow](https://github.com/ColdP/EdgeFlow)
 - **Developer's Site:** [btm-m.site](https://btm-m.site)
 - **Blog:** [btm-m.live](https://btm-m.live)
 
 ---
 
-> Made with love by [btm_m](https://github.com/btm-m)
+> Made with love by [btm_m](https://github.com/ColdP)

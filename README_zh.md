@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/btm-m/EdgeFlow/releases">
+  <a href="https://github.com/ColdP/EdgeFlow/releases">
     <img src="https://img.shields.io/github/v/release/btm-m/EdgeFlow?color=green" alt="最新版本" />
   </a>
   <img src="https://img.shields.io/badge/许可证-GPL%20v3.0-blue" alt="许可证: GPL v3.0" />
@@ -75,7 +75,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/btm-m/EdgeFlow.git
+git clone https://github.com/ColdP/EdgeFlow.git
 cd EdgeFlow
 
 # 构建调试 APK
@@ -139,10 +139,10 @@ EdgeFlow/
 
 ## 链接
 
-- **GitHub 仓库：** [github.com/btm-m/EdgeFlow](https://github.com/btm-m/EdgeFlow)
+- **GitHub 仓库：** [github.com/btm-m/EdgeFlow](https://github.com/ColdP/EdgeFlow)
 - **开发者网站：** [btm-m.site](https://btm-m.site)
 - **博客：** [btm-m.live](https://btm-m.live)
 
 ---
 
-> 由 [btm_m](https://github.com/btm-m) 制作
+> 由 [btm_m](https://github.com/ColdP) 制作
